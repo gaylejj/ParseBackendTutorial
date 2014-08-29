@@ -7,13 +7,16 @@
 //
 
 #import "JKEAppDelegate.h"
-#import<Parse/Parse.h>
+#import "Constants.h"
+#import <Parse/Parse.h>
 
 @implementation JKEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"" clientKey:@""];
+    [Parse setApplicationId:kParseApplicationID clientKey:kParseClientID];
+
+    
     
     return YES;
 }

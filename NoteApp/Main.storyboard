@@ -101,7 +101,7 @@
         <!--My Notes-->
         <scene sceneID="U6e-Yc-lGp">
             <objects>
-                <tableViewController id="fCP-Ea-5rE" sceneMemberID="viewController">
+                <tableViewController id="fCP-Ea-5rE" customClass="JKENotesListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wax-lJ-xoO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,7 +159,7 @@
         <!--Add/Edit Note-->
         <scene sceneID="dCH-KY-hI1">
             <objects>
-                <viewController id="b18-tV-aNQ" sceneMemberID="viewController">
+                <viewController id="b18-tV-aNQ" customClass="JKENotesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Ee-3w-nVK"/>
                         <viewControllerLayoutGuide type="bottom" id="ZNh-AN-g9Y"/>
@@ -193,8 +193,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit Note" id="ZaW-ks-i8R">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fTe-zB-atp"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fTe-zB-atp">
+                            <connections>
+                                <action selector="saveWasPressed:" destination="b18-tV-aNQ" id="GyX-he-jwf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="1O3-bz-a5p" id="5MT-rI-ppL"/>
+                        <outlet property="titleTextField" destination="dGu-gH-NeL" id="SpG-f1-LMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDm-P1-KtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
