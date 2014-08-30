@@ -7,7 +7,7 @@
         <!--My Notes-->
         <scene sceneID="Kb9-qg-dRM">
             <objects>
-                <viewController id="CZn-xq-cPa" sceneMemberID="viewController">
+                <viewController id="CZn-xq-cPa" customClass="JKELoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wz7-Me-nCu"/>
                         <viewControllerLayoutGuide type="bottom" id="5jb-VK-ZzA"/>
@@ -31,6 +31,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="CZn-xq-cPa" eventType="touchUpInside" id="ICl-d4-nKC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-mt-Dxv">
                                 <rect key="frame" x="226" y="219" width="55" height="30"/>
@@ -51,6 +54,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Notes" id="Wra-4a-cwi"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ijk-bd-v3K" id="ElJ-bs-KaO"/>
+                        <outlet property="usernameTextField" destination="kWh-d5-HUa" id="oeK-6l-q3j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAZ-eJ-jlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +66,7 @@
         <!--My Notes-->
         <scene sceneID="rPb-tf-dOI">
             <objects>
-                <viewController id="DSZ-5x-a2c" sceneMemberID="viewController">
+                <viewController id="DSZ-5x-a2c" customClass="JKESignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8WQ-6M-rIi"/>
                         <viewControllerLayoutGuide type="bottom" id="rFK-wS-oxx"/>
@@ -88,11 +95,19 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupButtonPressed:" destination="DSZ-5x-a2c" eventType="touchUpInside" id="aFp-4b-Gti"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Notes" id="nCX-nL-v8s"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="108-Xs-9xo" id="2dL-Hk-1WA"/>
+                        <outlet property="passwordtextField" destination="bPv-9o-b8h" id="4xX-J1-uIs"/>
+                        <outlet property="usernameTextField" destination="2ap-nF-KDG" id="Kq3-p1-aVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYm-zw-bXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +156,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Notes" id="Z4P-Tw-GmJ">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="2zg-cW-kZv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="2zg-cW-kZv">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="fCP-Ea-5rE" id="gaX-Sd-V4R"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6EJ-9k-yQ9">
                             <connections>
                                 <segue destination="b18-tV-aNQ" kind="push" identifier="addNote" id="2qs-TO-W7i"/>

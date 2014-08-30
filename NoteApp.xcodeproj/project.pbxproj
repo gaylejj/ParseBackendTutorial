@@ -27,6 +27,10 @@
 		257C866119B123920069D828 /* JKENotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C865F19B123920069D828 /* JKENotesListViewController.m */; };
 		257C866419B129BD0069D828 /* JKENotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866319B129BD0069D828 /* JKENotesViewController.m */; };
 		257C866519B129BD0069D828 /* JKENotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866319B129BD0069D828 /* JKENotesViewController.m */; };
+		257C866819B18A260069D828 /* JKELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866719B18A260069D828 /* JKELoginViewController.m */; };
+		257C866919B18A260069D828 /* JKELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866719B18A260069D828 /* JKELoginViewController.m */; };
+		257C866C19B18E040069D828 /* JKESignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866B19B18E040069D828 /* JKESignUpViewController.m */; };
+		257C866D19B18E040069D828 /* JKESignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257C866B19B18E040069D828 /* JKESignUpViewController.m */; };
 		5FF2845C193FC85900D131AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF2845B193FC85900D131AB /* Foundation.framework */; };
 		5FF2845E193FC85900D131AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF2845D193FC85900D131AB /* CoreGraphics.framework */; };
 		5FF28460193FC85900D131AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF2845F193FC85900D131AB /* UIKit.framework */; };
@@ -71,6 +75,10 @@
 		257C865F19B123920069D828 /* JKENotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKENotesListViewController.m; sourceTree = "<group>"; };
 		257C866219B129BD0069D828 /* JKENotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKENotesViewController.h; sourceTree = "<group>"; };
 		257C866319B129BD0069D828 /* JKENotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKENotesViewController.m; sourceTree = "<group>"; };
+		257C866619B18A260069D828 /* JKELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKELoginViewController.h; sourceTree = "<group>"; };
+		257C866719B18A260069D828 /* JKELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKELoginViewController.m; sourceTree = "<group>"; };
+		257C866A19B18E040069D828 /* JKESignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKESignUpViewController.h; sourceTree = "<group>"; };
+		257C866B19B18E040069D828 /* JKESignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKESignUpViewController.m; sourceTree = "<group>"; };
 		5FF28458193FC85900D131AB /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF2845B193FC85900D131AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5FF2845D193FC85900D131AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +191,10 @@
 				257C865F19B123920069D828 /* JKENotesListViewController.m */,
 				257C866219B129BD0069D828 /* JKENotesViewController.h */,
 				257C866319B129BD0069D828 /* JKENotesViewController.m */,
+				257C866619B18A260069D828 /* JKELoginViewController.h */,
+				257C866719B18A260069D828 /* JKELoginViewController.m */,
+				257C866A19B18E040069D828 /* JKESignUpViewController.h */,
+				257C866B19B18E040069D828 /* JKESignUpViewController.m */,
 			);
 			path = NoteApp;
 			sourceTree = "<group>";
@@ -320,6 +332,8 @@
 				5FF2846C193FC85900D131AB /* JKEAppDelegate.m in Sources */,
 				25570BAC19B11DD10053A9CD /* Constants.m in Sources */,
 				257C866419B129BD0069D828 /* JKENotesViewController.m in Sources */,
+				257C866C19B18E040069D828 /* JKESignUpViewController.m in Sources */,
+				257C866819B18A260069D828 /* JKELoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				257C866519B129BD0069D828 /* JKENotesViewController.m in Sources */,
+				257C866919B18A260069D828 /* JKELoginViewController.m in Sources */,
 				5FF28481193FC85A00D131AB /* NoteAppTests.m in Sources */,
 				257C866119B123920069D828 /* JKENotesListViewController.m in Sources */,
+				257C866D19B18E040069D828 /* JKESignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

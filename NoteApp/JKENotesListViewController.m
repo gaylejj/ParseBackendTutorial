@@ -97,6 +97,14 @@
     }
 }
 
+- (IBAction)logoutButtonPressed:(id)sender {
+    
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
