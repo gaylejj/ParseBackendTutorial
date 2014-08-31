@@ -57,6 +57,7 @@
     PFObject *newNote = [PFObject objectWithClassName:@"Post"];
     newNote[@"Title"] = self.titleTextField.text;
     newNote[@"Content"] = self.contentTextView.text;
+    newNote[@"author"] = [PFUser currentUser];
     
     [newNote saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {

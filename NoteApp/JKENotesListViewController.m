@@ -83,6 +83,20 @@
     return cell;
 }
 
+-(PFQuery *)queryForTable {
+    //Create a query
+    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
+    
+    //Follow Relationship
+    if ([PFUser currentUser]) {
+        [query whereKey:@"author" equalTo:[PFUser currentUser]];
+    } else {
+        [query whereKey:@"nonexistent" equalTo:@"doesn't exist"];
+    }
+    return query;
+}
+
+#pragma mark UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
